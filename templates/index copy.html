@@ -15,32 +15,40 @@
     </head>
 
     <body>
-        <div class="bg-container">
-            <h1 class="heading">Water Quality Dashboard</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 graph">
-                        <img src="{{ url_for('static', filename='qww-1.jpg') }}" class="graph-img" alt="1">
-                    </div>
-                    <div class="col-4 graph">
-                        <img src="{{ url_for('static', filename='qww-2.jpg') }}" class="graph-img" alt="2">
-                    </div>
-                    <div class="col-4 graph">
-                        <img src="{{ url_for('static', filename='qww-1.jpg') }}" class="graph-img" alt="3">
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+            <a class="navbar-brand" href="#">Water Quality Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#">
+                        Why Choose Us?
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </div>
+            </div>
+        </nav>
+
+        <div class="bg-container">
+            <div class="container back">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column align-items-end">
-                        <button class="button">TODAY</button>
+                    <div class="col-6 graph">
+
                     </div>
-                    <div class="col-6 d-flex flex-column align-items-start">
-                        <button class="button">YESTERDAY</button>
+                    <div class="col-6 d-flex flex-column justify-content-centre buttons">
+                        <div>
+                            <button class="today-button btn ">TODAY</button>
+                        </div>
+                        <div>
+                            <button class="yesterday-button btn">YESTERDAY</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="d-flex flex-column justify-content-centre">
                     <div class="d-flex flex-row justify-content-centre row">
-                        <div class="col-3 parameter">
+                        <div class="col-3 d-flex flex-column justify-content-centre parameter">
                             <p class="label">PARAMETER-1</p>
                             <p class="label-value">100</p>
                         </div>
@@ -55,7 +63,7 @@
                     </div>
 
                     <div class="d-flex flex-row justify-content-centre row">
-                        <div class="col-3 parameter">
+                        <div class="col-3 d-flex flex-column justify-content-centre parameter">
                             <p class="label">PARAMETER-4</p>
                             <p class="label-value">100</p>
                         </div>

@@ -1,37 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
-.back {
-    margin: 50px;
+.bg-container {
     font-family: 'Roboto';
+    background-color: #1f2833;
+    padding: 50px;
+    padding-top: 20px;
 }
 
-.graph {
-    height: 500px;
-    background-color: purple;
-}
-
-.buttons {
+.heading {
+    font-family: "Bree Serif";
+    font-size: 32px;
+    color: #45a29e;
     text-align: center;
-
+    margin-bottom: 30px;
 }
 
-.btn {
-    margin: 20px;
-    background-color: black;
-    color: white;
-    width: 200px;
+.graph-container {
+    height: 500px;
+    /* background-color: purple; */
+}
+
+.graph-img {
+    width: 100%;
+}
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: #66fcf1;
+    border: 2px solid #c5c6c7;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0b0c10;
+    width: 120px;
+    height: 38px;
 }
 
 .parameter {
-    background-color: pink;
+    background-color: #0b0c10;
+    border: solid 2px #45a29e;
     border-radius: 9px;
     text-align: center;
-    padding: 7px;
+    padding: 14px;
     margin: 40px;
+    margin-bottom: 0px;
 }
 
 .label {
-    background-color: red;
+    background-color: #45a29e;
     color: white;
     padding: 5px;
+}
+
+.label-value {
+    background-color: #c5c6c7;
+    color: #45a29e;
+    padding: 5px;
+    border: 0;
+    border-radius: 20px;
+    width: 40%;
+    margin: auto;
 }
