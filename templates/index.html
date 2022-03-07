@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+        <title>Water Quality Monitoring</title>
+    </head>
+
+    <body>
+        <div class="container back">
+            <div class="row">
+                <div class="col-6 graph">
+
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-centre buttons">
+                    <div>
+                        <button class="today-button btn ">TODAY</button>
+                    </div>
+                    <div>
+                        <button class="yesterday-button btn">YESTERDAY</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-centre">
+                <div class="d-flex flex-row justify-content-centre row">
+                    <div class="col-3 d-flex flex-column justify-content-centre parameter">
+                        <p class="label">PARAMETER-1</p>
+                        <p class="label-value">100</p>
+                    </div>
+                    <div class="col-3 parameter">
+                        <p class="label">PARAMETER-2</p>
+                        <p class="label-value">100</p>
+                    </div>
+                    <div class="col-3 parameter">
+                        <p class="label">PARAMETER-3</p>
+                        <p class="label-value">100</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-centre row">
+                    <div class="col-3 d-flex flex-column justify-content-centre parameter">
+                        <p class="label">PARAMETER-4</p>
+                        <p class="label-value">100</p>
+                    </div>
+                    <div class="col-3 parameter">
+                        <p class="label">PARAMETER-5</p>
+                        <p class="label-value">100</p>
+                    </div>
+                    <div class="col-3 parameter">
+                        <p class="label">PARAMETER-6</p>
+                        <p class="label-value">100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
